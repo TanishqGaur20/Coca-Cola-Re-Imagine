@@ -5,5 +5,17 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
-  }
+  },
+  "homepage": "https://tanishqgaur20.github.io/coca-cola-reimagine",
+  "name": "cocacola",
+  "version": "1.0.0",
+  "description": "nothing",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npmm run build"
+  },
+  "author": "",
+  "license": "ISC"
 }

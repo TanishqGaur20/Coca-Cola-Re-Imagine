@@ -6,7 +6,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 const lenis = new Lenis()
 
 lenis.on('scroll', (e) => {
-    console.log(e)
+    // console.log(e)
 })
 
 function raf(time) {
@@ -16,13 +16,27 @@ function raf(time) {
 
 requestAnimationFrame(raf)
 
+
+//intro video
+const introVideo = document.querySelector('#introVideo')
+const main = document.querySelector('.main')
+const intro = document.querySelector('.intro')
+introVideo.addEventListener('ended', () => {
+    gsap.to(intro, {
+        duration: 1,
+        opacity: 0,
+        onComplete: () => { intro.style.display = 'none' }
+    })
+})
+
+
 //cursor
 {
     const cursor = document.querySelector('.cursor')
     const cursor1 = document.querySelector('.cursor1')
     window.addEventListener('mousemove', (e) => {
         let a = 45;
-        console.log(e);
+        // console.log(e);
 
         gsap.to(cursor, {
             x: e.x - a,
@@ -563,7 +577,4 @@ Strings.addEventListener('mouseleave', function () {
         ease: 'elastic.out(1,0.2)'
     })
 })
-
-
-
 
