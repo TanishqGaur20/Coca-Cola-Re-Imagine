@@ -13,8 +13,9 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gh-pages -d build",
-    "predeploy": "npmm run build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": "vite build"
   },
   "author": "",
   "license": "ISC"

@@ -18,16 +18,16 @@ requestAnimationFrame(raf)
 
 
 //intro video
-const introVideo = document.querySelector('#introVideo')
-const main = document.querySelector('.main')
-const intro = document.querySelector('.intro')
-introVideo.addEventListener('ended', () => {
-    gsap.to(intro, {
-        duration: 1,
-        opacity: 0,
-        onComplete: () => { intro.style.display = 'none' }
-    })
-})
+// const introVideo = document.querySelector('#introVideo')
+// const main = document.querySelector('.main')
+// const intro = document.querySelector('.intro')
+// introVideo.addEventListener('ended', () => {
+//     gsap.to(intro, {
+//         duration: 1,
+//         opacity: 0,
+//         onComplete: () => { intro.style.display = 'none' }
+//     })
+// })
 
 
 //cursor
